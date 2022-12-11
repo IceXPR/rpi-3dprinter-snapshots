@@ -21,7 +21,7 @@ app.use(express.static('node_modules/jquery/dist'))
 // Return json with the list of photos available
 app.get('/api/v1.0/photos', (req, res) => {
   
-  const directoryPath = path.join(__dirname, 'public', 'bird-photos');
+  const directoryPath = path.join(__dirname, 'public', 'printer-photos');
   fs.readdir(directoryPath, function (err, files) {
     if (err) {
       console.debug('Unable to scan directory: ' + err);

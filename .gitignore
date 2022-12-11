@@ -103,6 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-public/bird-videos/
-public/bird-photos/
+public/printer-photos/
 .vscode

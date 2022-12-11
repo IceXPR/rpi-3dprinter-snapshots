@@ -6,12 +6,12 @@ $(function () {
     success: function (result) {
       for (let photo of result.photos) {
           $("#photosList")
-          .append('<image class="birdPhotoClass" src="bird-photos/'+ photo + '"/>')
+          .append('<image class="printerPhotoClass" src="printer-photos/'+ photo + '"/>')
       }
 
-      $(".birdPhotoClass").on("click", function(event) {
+      $(".printerPhotoClass").on("click", function(event) {
         const photoRelPath = $(event.target).attr('src');
-        const videoRelPath = photoRelPath.replace('.jpg', '.mp4').replace('bird-photos/bird-photo-','bird-videos/bird-video-');
+        const videoRelPath = photoRelPath.replace('.jpg', '.mp4').replace('printer-photos/printer-photo-','printer-videos/printer-video-');
         console.log(photoRelPath + "\n" + videoRelPath);
           $("#videoSource").attr('src', videoRelPath );
           var videoPlayer = document.getElementById('videoPlayer');

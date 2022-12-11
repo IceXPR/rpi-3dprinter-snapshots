@@ -4,17 +4,17 @@ height: 100px;
 position: fixed;
 }
 
-#birdhouseImage {
+#printerhouseImage {
   float: left;
 }
 
-.videoNameClass {
+.photoNameClass {
   color: black;
   padding: 2px;
   width: 200px;
 }
 
-#videoPlayerDiv {
+#photoPlayerDiv {
   float: left;
   position: fixed;
   top: 100px;
@@ -27,7 +27,7 @@ position: fixed;
   top: 110px;
 }
 
-.birdPhotoClass {
+.printerPhotoClass {
   width: 100px;
   margin: 2px;
 }

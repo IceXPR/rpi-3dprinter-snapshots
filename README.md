@@ -1,13 +1,16 @@
 # rpi-3dprinter-snapshots
-A birdhouse that records the birds lifehood using RaspberryPI
+A printerhouse that records the printers lifehood using RaspberryPI
 
 ## Install 
 
 ### Prepare the PI
 ```bash
 apt update
-apt install ffmpeg
 apt install raspistill
+wget https://nodejs.org/dist/latest-v11.x/node-v11.15.0-linux-armv6l.tar.gz
+tar -xzf node-v11.15.0-linux-armv6l.tar.gz
+cd node-v11.15.0-linux-armv6l/
+sudo cp -R * /usr/local/
 ```
 
 ### Install Code Dependencies

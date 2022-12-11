@@ -1,7 +1,7 @@
 {
-  "name": "rpi-birdhouse-video-stream",
+  "name": "rpi-printerhouse-video-stream",
   "version": "1.0.0",
-  "description": "A birdhouse for video streaming using RaspberryPI",
+  "description": "A printerhouse for video streaming using RaspberryPI",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IceXPR/rpi-birdhouse-video-stream.git"
+    "url": "git+https://github.com/IceXPR/rpi-printerhouse-video-stream.git"
   },
   "keywords": [
-    "bird",
+    "printer",
     "stream",
     "video"
   ],
   "author": "Julio Colon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IceXPR/rpi-birdhouse-video-stream/issues"
+    "url": "https://github.com/IceXPR/rpi-printerhouse-video-stream/issues"
   },
-  "homepage": "https://github.com/IceXPR/rpi-birdhouse-video-stream#readme",
+  "homepage": "https://github.com/IceXPR/rpi-printerhouse-video-stream#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
