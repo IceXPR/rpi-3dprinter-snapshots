@@ -1,8 +1,5 @@
-![](images/birdhouse.png)
-# rpi-birdhouse-video-recorder
+# rpi-3dprinter-snapshots
 A birdhouse that records the birds lifehood using RaspberryPI
-
-![](images/sample-ux.png)
 
 ## Install 
 
@@ -11,7 +8,6 @@ A birdhouse that records the birds lifehood using RaspberryPI
 apt update
 apt install ffmpeg
 apt install raspistill
-apt install raspivid
 ```
 
 ### Install Code Dependencies
@@ -27,7 +23,7 @@ npm start
 
 In your computer open the browser pointing to the raspberry pi and use port 8080
 
-For example: http://mybirdhouse:8080/
+For example: http://my3dprinter:8080/
 
 
 ### To run on boot
@@ -37,7 +33,7 @@ pm2 startup systemd
 ```
 Follow the instruction to install the script
 ```
-pm2 start --name=BIRDHOUSE npm -- start
+pm2 start --name=3DPRINTER npm -- start
 pm2 save
 ```
 
