@@ -40,7 +40,6 @@ pm2 start --name=3DPRINTER npm -- start
 pm2 save
 ```
 
-
 ## References
 - https://coderrocketfuel.com/article/how-to-run-a-npm-start-script-with-pm2
 - https://www.tecmint.com/enable-pm2-to-auto-start-node-js-app/
