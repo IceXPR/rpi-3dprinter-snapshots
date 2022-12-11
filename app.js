@@ -1,13 +1,13 @@
-// Start the child process to capture still images and videos every 60sec
-// var exec = require('child_process').exec;
-// exec('./start-photo-snapshots.sh', function (err, stdout, stderr) {
-//   if (err) {
-//   console.error(err);
-//   return;
-// }
-// console.log(stdout);
-// process.exit(0);// exit process once it is opened
-// })
+//Start the child process to capture still images and videos every 60sec
+var exec = require('child_process').exec;
+exec('./start-photo-snapshots.sh', function (err, stdout, stderr) {
+  if (err) {
+  console.error(err);
+  return;
+}
+console.log(stdout);
+process.exit(0);// exit process once it is opened
+})
 
 // Express js code
 const fs = require('fs')

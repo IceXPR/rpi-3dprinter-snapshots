@@ -33,6 +33,10 @@ position: fixed;
   margin: 2px;
 }
 
+#photoDisplay {
+  padding: 10px;
+}
+
 
 video {
   padding: 10px;
