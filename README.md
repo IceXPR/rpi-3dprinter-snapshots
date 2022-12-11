@@ -54,3 +54,5 @@ raspivid -n -ih -t 0 -rot 0 -w 1280 -h 720 -fps 15 -b 1000000 -o - | nc -lkv4 50
 - https://linuxize.com/post/how-to-install-node-js-on-raspberry-pi/
 - https://stackfame.com/list-all-files-in-a-directory-nodejs#:~:text=Steps%20to%20get%20list%20of%20all%20the%20files,of%20files%20list%20from%20the%20directory.%20More%20items
 - https://stackoverflow.com/questions/26802201/bash-get-date-and-time-from-another-time-zone
+- https://convertio.co/png-ico/
+- https://icons8.com/
