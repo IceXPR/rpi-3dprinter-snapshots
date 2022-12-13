@@ -6,12 +6,13 @@ $(function () {
     success: function (result) {
       for (let photo of result.photos) {
           $("#photosList")
-          .append('<image class="printerPhotoClass" src="printer-photos/'+ photo + '"/>')
+          .append('<image class="printerPhotoClass" src="printer-photos/' + photo + '" title="' + photo + '"/>')
       }
 
       $(".printerPhotoClass").on("click", function(event) {
         const photoRelPath = $(event.target).attr('src');
           $("#photoDisplay").attr('src', photoRelPath );
+          $("#photoDisplay").attr('title', photoRelPath );
       });
     }
   });
