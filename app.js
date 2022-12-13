@@ -14,9 +14,13 @@ const fs = require('fs')
 const path = require('path');
 const express = require('express')
 const app = express()
+const oneHour  = 60*60*1000            // 60min * 60sec * 1000ms
+const fiveMinutes = 5*60*1000;         // 5min & 60sec * 1000ms
+const twentyfourHours = 24*60*60*1000; // 24hours * 60min * 60sec * 1000ms
 
-app.use(express.static('public'))
-app.use(express.static('node_modules/jquery/dist'))
+app.use('/printer-photos', express.static('public/printer-photos', { maxAge: twentyfourHours}))
+app.use(express.static('public', {maxAge: fiveMinutes}))
+app.use(express.static('node_modules/jquery/dist', { maxAge: oneHour }))
 
 // Return json with the list of photos available
 app.get('/api/v1.0/photos', (req, res) => {
