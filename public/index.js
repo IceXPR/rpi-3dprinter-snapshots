@@ -6,7 +6,7 @@ $(function () {
     success: function (result) {
       for (let thumbnail of result.thumbnails) {
           $("#photosList")
-          .append('<image class="printerPhotoClass" src="printer-thumbnails/' + thumbnail + '" title="' + photo + '"/>')
+          .append('<image class="printerPhotoClass" src="printer-thumbnails/' + thumbnail + '" title="' + thumbnail + '"/>')
       }
 
       $(".printerPhotoClass").on("click", function(event) {
