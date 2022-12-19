@@ -14,7 +14,7 @@ const fs = require('fs')
 const path = require('path');
 const express = require('express')
 const app = express()
-const oneHour  = 60*60*1000            // 60min * 60sec * 1000ms
+const oneHour  = 60*60*1000            // 60m in * 60sec * 1000ms
 const fiveMinutes = 5*60*1000;         // 5min & 60sec * 1000ms
 const twentyfourHours = 24*60*60*1000; // 24hours * 60min * 60sec * 1000ms
 
