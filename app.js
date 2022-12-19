@@ -19,13 +19,14 @@ const fiveMinutes = 5*60*1000;         // 5min & 60sec * 1000ms
 const twentyfourHours = 24*60*60*1000; // 24hours * 60min * 60sec * 1000ms
 
 app.use('/printer-photos', express.static('public/printer-photos', { maxAge: twentyfourHours}))
+app.use('/printer-thumbnails', express.static('public/printer-thumbnails', { maxAge: twentyfourHours}))
 app.use(express.static('public', {maxAge: fiveMinutes}))
 app.use(express.static('node_modules/jquery/dist', { maxAge: oneHour }))
 
 // Return json with the list of photos available
-app.get('/api/v1.0/photos', (req, res) => {
+app.get('/api/v1.0/thumbnails', (req, res) => {
   
-  const directoryPath = path.join(__dirname, 'public', 'printer-photos');
+  const directoryPath = path.join(__dirname, 'public', 'printer-thumbnails');
   fs.readdir(directoryPath, function (err, files) {
     if (err) {
       console.debug('Unable to scan directory: ' + err);
@@ -41,7 +42,7 @@ app.get('/api/v1.0/photos', (req, res) => {
       return b.time - a.time; })
     .map(function (v) {
       return v.name; });
-    res.json({ 'photos': sortedFiles }).status(200)
+    res.json({ 'thumbnails': sortedFiles }).status(200)
   });
 
 });

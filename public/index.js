@@ -1,12 +1,12 @@
 $(function () {
 
   $.ajax({
-    url: "/api/v1.0/photos",
+    url: "/api/v1.0/thumbnails",
     data: {},
     success: function (result) {
-      for (let photo of result.photos) {
+      for (let thumbnail of result.thumbnails) {
           $("#photosList")
-          .append('<image class="printerPhotoClass" src="printer-thumbnails/' + photo + '" title="' + photo + '"/>')
+          .append('<image class="printerPhotoClass" src="printer-thumbnails/' + thumbnail + '" title="' + photo + '"/>')
       }
 
       $(".printerPhotoClass").on("click", function(event) {
@@ -16,8 +16,6 @@ $(function () {
       });
     }
   });
-
-
 
 });
 
