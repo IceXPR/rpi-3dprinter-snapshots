@@ -10,7 +10,7 @@ $(function () {
       }
 
       $(".printerPhotoClass").on("click", function(event) {
-        const photoRelPath = $(event.target).attr('src').replace('thumbnails', 'photos');
+        const photoRelPath = $(event.target).attr('src').replace('thumbnail', 'photo');
           $("#photoDisplay").attr('src', photoRelPath );
           $("#photoDisplay").attr('title', photoRelPath );
       });
