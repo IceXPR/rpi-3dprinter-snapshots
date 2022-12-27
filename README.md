@@ -1,6 +1,7 @@
 # rpi-3dprinter-snapshots
 A printerhouse that records the printers lifehood using RaspberryPI
 
+![Screenshot of the application](screenshot.png)
 ## Install 
 
 ### Prepare the PI
